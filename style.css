@@ -1,13 +1,56 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.banner {
+  height: 500px; /* hauteur souhaitée de la bannière */
+  background-color: #f2f2f2; /* couleur de fond de la bannière */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.header-image {
+  width: 100%;
+}
 .navbar {
-    font-family: 'Open Sans', sans-serif;
-    background-color: transparent !important;
+  background-color: transparent !important;
+}
+.navbar-nav li a {
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.navbar-nav li a:hover {
+  color: #555;
+}
+.text-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  max-width: 600px;
+  font-size: 30px;
+}
+.btn-dark:hover .bi-arrow-right {
+  animation: rotateArrow 0.5s ease-in-out forwards;
+}
+
+@keyframes rotateArrow {
+  to {
+    transform: rotate(90deg);
   }
-  .navbar-nav li a {
-    color: #333;
-    font-weight: 600;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-  .navbar-nav li a:hover {
-    color: #555;
-  }
+}
+
+.container {
+  margin-top: 50px;
+}
